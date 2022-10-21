@@ -14,3 +14,4 @@ if (wordBad > wordNot) {
 else {
     console.log(sentence)
 }
+

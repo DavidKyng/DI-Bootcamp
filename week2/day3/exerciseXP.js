@@ -34,22 +34,21 @@
 //     if (index < 3){
 //         console.log("my " + (index+1) + (suffix[index]) + " is " + (colors[index]))
 //     }
-//     else {
-//         console.log(`my ${index+1}${suffix[3]} is ${colors[index]}`)
-//     }
-// }
+    // else {
+    //     console.log(`my ${index+1}${suffix[3]} is ${colors[index]}`)
+    // }
+//}
 
 
 //EXERCISE 3
 
-// let answer = prompt("give a number")
+// let number = prompt("number")
+// console.log(number)
 
-// console.log(typeof answer);
-
-// while (index != 10) {
-//     const answer = prompt("give a number")
-//     index = Number(answer)
-//     }
+// while(number < 10){
+//     number++
+//     console.log(number)
+// }
 
 
 //EXERCISE 4
@@ -69,34 +68,55 @@
 //         david: [1, 500],
 //     },
 // }
-// // console.log(building.numberOfFloors)
-// // console.log(building.numberOfAptByFloor.firstFloor)
-// // console.log(building.numberOfAptByFloor.thirdFloor)
-// // console.log(building.nameOfTenants[1])
-// // console.log(building.numberOfRoomsAndRent.dan[0])
+// console.log(building.numberOfFloors)
+// console.log(building.numberOfAptByFloor.firstFloor)
+// console.log(building.numberOfAptByFloor.thirdFloor)
+// console.log(building.nameOfTenants[1])
+// console.log(building.numberOfRoomsAndRent["dan"][0])
 
-// const sarahs = building.numberOfRoomsAndRent.sarah[1]
-// const davids = building.numberOfRoomsAndRent.david[1]
-// const dans = building.numberOfRoomsAndRent.dan[1]
-// console.log = (sarahs)
-// console.log = (davids)
+// const sarahs = building.numberOfRoomsAndRent["sarah"][1]
+// const dans = building.numberOfRoomsAndRent["dan"][1]
+// const davids = building.numberOfRoomsAndRent["david"][1]
+// const sarahDavid = sarahs + davids
 
-// if (sarahs + davids > dans){
-//     else(building.numberOfRoomsAndRent.dan[1] = 1200)
-//     console.log(building.numberOfRoomsAndRent.dan[1])
+// if(sarahDavid > dans){
+//     dansRent = dans + 200
+//     console.log(dansRent)
+// }else{
 // }
 
 
 //EXERCISE 5
 
-const family = {
-    dad: "daddy",
-    mom: "mommy",
-    son: "sonny",
-}
-console.log(family)
-for(item in family){
-    console.log(item)
-    console.log(family[item])
+// const family = {
+//     dad: "daddy",
+//     mom: "mommy",
+//     son: "sonny",
+// }
+// console.log(family)
+// for(item in family){
+//     console.log(item)
+//     console.log(family[item])
+// }
 
-}
+// EXERCISE 6
+
+// const details = {
+//     my: "name",
+//     is: "Rudolf",
+//     the: "raindeer"
+//   }
+//   for(value in details){
+//     console.log(value)
+//     console.log(details[value])
+//   }
+
+// EXERCISE 7
+
+// const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// names.sort()
+// const newNames = []
+// for(i = 0; i < names.length; i++){
+//   const secret = names[i][0]
+//   newNames.push(secret)
+// }console.log(newNames)

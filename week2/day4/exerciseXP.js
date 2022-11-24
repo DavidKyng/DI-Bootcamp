@@ -102,26 +102,53 @@
 // EXERCISE 6
 
 function hotelCost(){
-    let question = + prompt("How many nights will you be staying?")
+    let question = prompt("How many nights will you be staying?")
     while(question == "" || isNaN (question)){
-        question = + prompt("How many nights will you be staying?")
+        question = prompt("ANSWER THE DAMN QUESTION!")
     }
     return 140*question
 }
-console.log(hotelCost())
+// console.log(hotelCost())
 
 function planerideCost(){
     let question = prompt("What is your destination?")
-    while(question == "" || isNaN (question)){
-        question = + prompt("What is your destination?")
+    let answer = 0
+    while(!isNaN (question) || question == ""){
+        question = prompt("AGAIN?!!!")
     }
-    if(question == "London"){
-        return 183
-    }else if(question == "Paris"){
-        return 200
+    if(question === "London"){
+        answer = 183
+    }else if(question === "Paris"){
+        answer = 220
     }else{
-        return 300
+        answer = 300
+    }
+return answer
+}
+// console.log(planerideCost())
+
+function rentalCarCost(){
+    let question = prompt("How many days will you be renting a car")
+    while(question == "" || isNaN (question)){
+        question = prompt("...Please...stop.")
+    }
+    if(question>=10){
+        return question*0.85
     }
 
+    return 40*question
+    
 }
-console.log(planerideCost())
+// console.log(rentalCarCost())
+
+function totalVacationCost(){
+    const hotel = hotelCost()
+    const plane = planerideCost()
+    const car = rentalCarCost()
+    console.log("The hotel will cost " + hotel)
+    console.log("The plane will cost " + plane)
+    console.log("The car will cost " + car)
+    return hotel+plane+car
+}
+console.log(totalVacationCost())
+
